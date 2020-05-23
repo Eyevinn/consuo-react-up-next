@@ -1,0 +1,29 @@
+{
+  "name": "@consuo/react-up-next",
+  "version": "0.1.0",
+  "description": "Show what is up next in a Consuo schedule",
+  "main": "./dist/consuo-react-up-next.js",
+  "scripts": {
+    "start": "parcel ./public/index.html --open --out-dir serve",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eyevinn Technology AB",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
