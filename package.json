@@ -8,8 +8,8 @@
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Eyevinn Technology AB",
-  "license": "MIT",
+  "author": "Eyevinn Technology AB <work@eyevinn.se>",
+  "license": "Apache-2.0",
   "dependencies": {
     "node-fetch": "^2.6.0",
     "prop-types": "^15.7.2",
