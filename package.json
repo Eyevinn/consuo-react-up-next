@@ -1,6 +1,6 @@
 {
   "name": "@consuo/react-up-next",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Show what is up next in a Consuo schedule",
   "main": "./dist/consuo-react-up-next.js",
   "scripts": {
