@@ -81,6 +81,7 @@ class ConsuoReactUpNext extends React.Component {
 ConsuoReactUpNext.propTypes = {
   apiUrl: PropTypes.string.isRequired,
   channelId: PropTypes.string.isRequired,
+  updateInterval: PropTypes.number
 };
 
 export default ConsuoReactUpNext;
