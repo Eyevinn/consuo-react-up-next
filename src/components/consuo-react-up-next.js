@@ -15,7 +15,8 @@ class ConsuoReactUpNext extends React.Component {
       channelId: props.channelId,
       eventNow: null,
       eventNext: null
-    }
+    };
+    this.updateInterval = props.updateInterval;
   }
 
   update() {
@@ -33,7 +34,6 @@ class ConsuoReactUpNext extends React.Component {
         eventNow.timeEnd = new Date(eventNow.end_time);
         eventNext.timeStart = new Date(eventNext.start_time);
         eventNext.timeEnd = new Date(eventNext.end_time);
-        console.log(eventNow, eventNext);
         const newState = {
           ...this.state,
           eventNow: eventNow,
@@ -46,6 +46,15 @@ class ConsuoReactUpNext extends React.Component {
 
   componentDidMount() {
     this.update();
+    if (this.updateInterval) {
+      this.interval = setInterval(this.update.bind(this), this.updateInterval * 1000);
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.interval) {
+      clearInterval(this.interval);
+    }
   }
 
   render () {

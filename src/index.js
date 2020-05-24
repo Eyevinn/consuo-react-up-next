@@ -20,7 +20,7 @@ class Index extends React.Component {
     let { channelId } = this.state;
     return (
       <div>
-        <UpNext apiUrl={API_URL} channelId={channelId} />
+        <UpNext apiUrl={API_URL} channelId={channelId} updateInterval={5}/>
       </div>
     );
   }
