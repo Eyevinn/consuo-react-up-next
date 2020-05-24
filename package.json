@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel ./public/index.html --open --out-dir serve",
     "build": "webpack",
-    "version": "npm run build && git add dist",
+    "version": "npm run build && git add dist/*.js",
     "postversion": "git push && git push --tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
