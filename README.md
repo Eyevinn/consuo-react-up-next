@@ -11,7 +11,7 @@ npm install --save @consuo/react-up-next
 ## Tutorial
 
 ```javascript
-import ConsuoUpNext from '@consuo/react-up-next`;
+import ConsuoUpNext from '@consuo/react-up-next';
 
 // In your render function
 <ConsuoUpNext apiUrl={"http://<SCHEDULE_API>"} channelId={"eyevinn"} updateInterval={5}/>
