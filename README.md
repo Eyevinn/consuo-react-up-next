@@ -2,6 +2,8 @@
 
 A simle React component that from the Consuo Schedule API fetches what is currently playing and what is up next.
 
+![Up next Screenshot](up-next-screenshot.png)
+
 ## Install
 
 ```
