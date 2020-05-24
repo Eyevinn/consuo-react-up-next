@@ -11,6 +11,10 @@
   },
   "author": "Eyevinn Technology AB <work@eyevinn.se>",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eyevinn/consuo-react-up-next.git"
+  },
   "dependencies": {
     "node-fetch": "^2.6.0",
     "prop-types": "^15.7.2",
