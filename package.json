@@ -6,6 +6,8 @@
   "scripts": {
     "start": "parcel ./public/index.html --open --out-dir serve",
     "build": "webpack",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Eyevinn Technology AB <work@eyevinn.se>",

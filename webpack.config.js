@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/components/consuo-react-up-next.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'consuo-ract-up-next.js',
+    filename: 'consuo-react-up-next.js',
     libraryTarget: 'commonjs2'
   },
   module: {
