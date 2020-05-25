@@ -5,7 +5,7 @@ import UpNext from './components/consuo-react-up-next';
 
 import "./index.scss";
 
-const API_URL = "http://localhost:8001";
+const API_URL = process.env.API_URL || "http://localhost:8001";
 
 class Index extends React.Component {
   constructor(props) {
