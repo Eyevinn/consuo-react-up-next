@@ -12,7 +12,6 @@ class ConsuoReactUpNext extends React.Component {
 
     this.apiUrl = props.apiUrl;
     this.state = {
-      channelId: props.channelId,
       eventNow: null,
       eventNext: null
     };
@@ -20,7 +19,7 @@ class ConsuoReactUpNext extends React.Component {
   }
 
   update() {
-    let { channelId } = this.state;
+    let { channelId } = this.props;
     const now = Date.now();
 
     fetch(this.apiUrl + "/channels/" + channelId + "/schedule" + "?start=" + (now - 3600 * 1000))
@@ -42,6 +41,12 @@ class ConsuoReactUpNext extends React.Component {
         this.setState(newState);
       }
     });
+  }
+
+  componentDidUpdate(prevProps, prevState){
+    if(prevProps.channelId !== this.props.channelId){
+      this.update();
+    }
   }
 
   componentDidMount() {
