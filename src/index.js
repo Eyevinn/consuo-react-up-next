@@ -19,4 +19,8 @@ class Index extends React.Component {
   }
 };
 
+Index.defaultProps = {
+  channelId: 'eyevinn'
+};
+
 ReactDOM.render(<Index />, document.getElementById('container'));
