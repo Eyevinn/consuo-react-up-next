@@ -39,7 +39,14 @@ class ConsuoReactUpNext extends React.Component {
           eventNext: eventNext
         };
         this.setState(newState);
-      }
+      } else {
+        const newState = {
+          ...this.state,
+          eventNow: null,
+          eventNext: null,
+        };
+        this.setState(newState);
+    }
     });
   }
 
